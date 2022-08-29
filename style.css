@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --bg-color: #EFEDFF;
+    --bg-login: #00984A;
+    --bg-login-container: #F3FCF4;
+    --color-font-login: #F3FCF4;
+}
+body {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background: var(--bg-color);
+    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+}
+.login-container {
+    width: 1000px;
+    height: 500px;
+    background: var(--bg-login-container);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+.login-user {
+    width: 50%;
+    height: 100%;
+    background: var(--bg-login);
+    border-radius: 10px 0 0 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-font-login);
+}
+.login-user .form-container {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    
+}
+.title {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.form-container .input {
+    margin: 10px 0;
+    padding: 15px;
+    outline: none;
+    background: #007B30;
+    border: none;
+    border-radius: 10px;
+    color: #EFEDFF;
+    font-size: 1.2rem;
+    transition: all .2s;
+}
+.form-container .input:hover {
+    background: #00771c;
+}
+.form-container .input:not(:placeholder-shown) {
+    background: #00771c;
+}
+.form-container .input::placeholder {
+    color: #EFEDFF;
+}
+.form-container input[type='submit'] {
+    padding: 15px 10px;
+    border-radius: 10px;
+    border: none;
+    margin-top: 20px;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+    color: #00984A;
+    cursor: pointer;
+    letter-spacing: 5px;
+}
+.info-logo {
+    width: 50%;
+    height: 100%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.info-logo .logo {
+    width: 400px;
+}
