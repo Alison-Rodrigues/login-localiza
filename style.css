@@ -75,6 +75,7 @@ body {
 }
 .form-container .input::placeholder {
     color: #EFEDFF;
+    opacity: 0.7;
 }
 .form-container input[type='submit'] {
     padding: 15px 10px;
@@ -89,6 +90,27 @@ body {
     cursor: pointer;
     letter-spacing: 5px;
 }
+.login-user .alter-pass {
+    text-decoration: none;
+    font-size: 0.8rem;
+    color: var(--color-font-login);
+    margin-top: 10px;
+}
+.login-user .alter-pass:hover {
+    text-decoration: underline;
+}
+.login-user .line {
+    width: 80%;
+    height: 1px;
+    background: var(--bg-login-container);
+    margin: 10px;
+}
+.login-user span {
+    font-size: 0.8rem;
+    text-align: center;
+    width: 70%;
+    opacity: 0.8;
+}
 .info-logo {
     width: 50%;
     height: 100%;
@@ -100,4 +122,11 @@ body {
 }
 .info-logo .logo {
     width: 400px;
+}
+.info-logo .icon {
+    width: 70px;
+    margin: 10px 20px;
+}
+.info-logo .icons-container {
+    display: flex;
 }
